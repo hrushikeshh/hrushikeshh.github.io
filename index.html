@@ -1,608 +1,165 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Hrushikesh Galande Portfolio</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+<html>
 
-    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
-    <link rel="stylesheet" href="css/animate.css">
-    
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <link rel="stylesheet" href="fonts/jost-variable.ttf">
 
-    <link rel="stylesheet" href="css/aos.css">
+</head>
 
-    <link rel="stylesheet" href="css/ionicons.min.css">
-    
-    <link rel="stylesheet" href="css/flaticon.css">
-    <link rel="stylesheet" href="css/icomoon.css">
-    <link rel="stylesheet" href="css/style.css">
-
-
-
-<style>
-
-/*======================================
-//--//-->   ABOUT
-======================================*/
-
-.about-mf .box-shadow-full {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-}
-
-.about-mf .about-img {
-  margin-bottom: 2rem;
-}
-
-.about-mf .about-img img {
-  margin-left: 10px;
-}
-
-
-.skill-mf .progress {
-  /* background-color: #cde1f8; */
-  margin: .5rem 0 1.2rem 0;
-  border-radius: 0;
-  height: .7rem;
-}
-
-.skill-mf .progress .progress-bar {
-  height: .7rem;
-  background-color: #ffbd39;
-}
-
-
-/* Animation styles */
-#typing-animation {
-  position: relative;
-  font-size: 30px;
-  font-weight: bold;
-  color: rgb(255, 255, 255);
-  overflow: hidden;
-  white-space: nowrap;
-  animation: typing 3s steps(20, end) infinite;
-}
-
-#typing-animation:before {
-  content: "";
-  /* position: absolute; */
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 100%;
-  background-color: #ccc;
-  animation: typing-cursor 0.5s ease-in-out infinite;
-}
-
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-
-@keyframes typing-cursor {
-  from {
-    width: 5px;
-  }
-  to {
-    width: 0;
-  }
-}
-
-
-/* project image zoom effect */
-
-.zoom-effect {
-  overflow: hidden;
-  transition: transform 0.3s ease-out;
-}
-
-.zoom-effect:hover {
-  transform: scale(1.1);
-}
-
-
-</style>
-
-
-  </head>
-  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-	  
-	  
-    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
-	    <div class="container">
-	      <a class="navbar-brand" href="index.html">Hrushikesh Galande</a>
-	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-	        <span class="oi oi-menu"></span> Menu
-	      </button>
-
-	      <div class="collapse navbar-collapse" id="ftco-nav">
-	        <ul class="navbar-nav nav ml-auto">
-	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
-	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
-	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
-	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
-	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
-	        </ul>
-	      </div>
-	    </div>
-	  </nav>
-	  <section id="home-section" class="hero">
-		  <div class="home-slider  owl-carousel">
-	       <div class="slider-item ">
-	      	<div class="overlay"></div>
-	         <div class="container">
-	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/bg_1.png);">
-	          	 <div class="overlay"></div>
-	          	</div>
-		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-		          	<div class="text">
-		          		<span class="subheading">Namaste!</span>
-			            <h1 class="mb-4 mt-3">I'm <span>Hrushikesh Galande</span></h1>
-
-						<!-- Element to contain animated typing -->
-						<span id="typing-animation"></span>
-
-						<script>
-
-						// Initialize the typing animation
-						const typingAnimationElement = document.getElementById('typing-animation');
-
-						// Create an array of typing text
-						const typingTexts = [
-						'Engineer  ',
-						'Analyst  ',
-						'Developer   ',
-						];
-
-						// Create a function to display the typing animation for a given text
-						function playTypingAnimation(text) {
-						// Loop through each character and add it to the element
-						for (let i = 0; i < text.length; i++) {
-							setTimeout(() => {
-							typingAnimationElement.textContent += text[i];
-							}, i * 200); // Increase the delay to slow down the typing animation
-						}
-
-						// Once the animation is complete, reset the text and start over
-						setTimeout(() => {
-							typingAnimationElement.textContent = '';
-							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
-						}, text.length * 200);
-						}
-
-						// Start the typing animation loop
-						playTypingAnimation(typingTexts[0]);
-
-						</script>
-
-						<br>
-						<br>
-			            <h2>A Data Analyst</h2>
-						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
-						<!-- <br> -->
-			            <p> 
-							<a href="https://github.com/hrushikeshh" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
-		            </div>
-		          </div>
-	        	</div>
-	        </div>
-	      </div>
-		</div>
-    </section>
-
-
-
-    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
-    	<div class="container">
-			<div class="row">
-				<div class="row d-flex align-items-stretch">
-				<!-- <div class="row d-flex"> -->
-					<div class="col-md-6 col-lg-5 d-flex">
-						<div class="img-about img d-flex align-items-stretch">
-							<div class="overlay">
-								<div class="row">
-									<div class="col-sm-6 col-md-5">
-									  <div class="about-img">
-										<img src="images/Hrushi abt me.jpg" class="img-fluid rounded b-shadow-a" alt="">
-									  </div>
-									</div>
-									<!-- Details next to profile image -->
-									<div class="col-sm-6 col-md-7">
-									  <div class="about-info">
-										<p><span class="title-s">Name: </span> <span>Hrushikesh Galande</span></p>
-										<p><span class="title-s">Job Role: </span> <span>Data Analyst</span></p>
-										<p><span class="title-s">Experience: </span> <span>2+ years</span></p>
-										<p><span class="title-s">Address: </span> <span>Mumbai, India</span></p>
-									  </div>
-									</div>
-								  </div>
-
-								<div class="skill-mf">
-									<p class="title-s">Skills</p>
-									<span>SQL</span> <span class="pull-right">95%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									
-									<span>PYTHON</span> <span class="pull-right">85%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									
-									<span>Data Visualization</span> <span class="pull-right">90%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									
-									<span>Power Bi</span> <span class="pull-right">85%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									
-									<span>Advance Excel</span> <span class="pull-right">80%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					
-					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
-						<div class="row justify-content-start pb-3">
-							<div class="col-md-12 heading-section ftco-animate">
-								
-								<h1 class="big">About</h1>
-								<h2 class="mb-4">About Me</h2>
-								
-								<p>With a solid background spanning 2+ years in EdTech industry, I've excelled as both an application trainer and development engineer. My journey extends further with dedicated coursework in data analysis, augmenting my skill set to include advanced proficiency in Excel, Power Bi, as well as Python, with an ongoing pursuit of mastering in SQL. I bring a wealth of experience and a passion for leveraging technology to drive educational excellence and innovation.</p>
-								<ul class="about-info mt-4 px-md-0 px-2">
-									<li class="d-flex"><span>Profile:</span> <span>Data Analytics</span></li>
-									<li class="d-flex"><span>Domain:</span> <span>EdTech</span></li>
-									<li class="d-flex"><span>Education:</span> <span>Graduation in Computer Science</span></li>
-									<li class="d-flex"><span>Language:</span> <span>English, Hindi &amp; Marathi</span></li>
-									<li class="d-flex"><span>BI Tools:</span> <span>Microsoft Power BI</span></li>
-									<li class="d-flex"><span>Other Skills:</span> <span>Excel, Git &amp; jira</span></li>
-									<li class="d-flex"><span>Interest:</span> <span>Traveling, Travel Photography, Teaching</span></li>
-									
-								</ul>
-							</div>
-						</div>
-
-
-						<div class="counter-wrap ftco-animate d-flex mt-md-3">
-							<div class="text">
-								<p class="mb-4">
-									<span class="number" data-number="8">0</span> <span>+</span>
-									<span>&nbsp; Projects completed</span>
-								</p>
-								<p><a href="https://www.linkedin.com/in/hrushikesh-galande/" class="btn btn-primary py-3 px-3">LinkedIn</a></p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-    </section>
-
-
-
-	
-    <section class="ftco-section ftco-no-pb" id="resume-section">
-    	<div class="container">
-    		<div class="row justify-content-center pb-5">
-          <div class="col-md-10 heading-section text-center ftco-animate">
-          	<h1 class="big big-2">Resume</h1>
-            <h2 class="mb-4">Resume</h2>
-            <p>With over 2 years of experience in EdTech and a strong proficiency in python, I have successfully completed a certification in data analysis, specializing in SQL, Python, Power Bi, and Excel.</p>
-          </div>
+<body>
+    <div id="main">
+        <div data-scroll data-scroll-speed="-5" id="page1">
+            <nav>
+                <img src="./Screenshot 2023-05-30 220719.png" alt="">
+                <div id="right-nav">
+                    <button>Book a Demo</button>
+                    <button><i class="ri-menu-fill"></i></button>
+                </div>
+            </nav>
+            <div class="bottom-page1">
+                <h1>Experience Real <br>
+                    Estate Agility</h1>
+                <div class="bottom-page1-inner">
+                    <h4>Create a digital twin of your existing building <br>
+                        and release the potential of Web3.</h4>
+                    <button>LEARN MORE</button>
+                </div>
+            </div>
+            <video src="https://thisismagma.com/wp-content/themes/magma/assets/home/hero/1.mp4?2" autoplay loop
+                muted></video>
         </div>
-
-		<div class="row">
-			<h1 class="big-4">Experience</h1>
-			<div class="underline"></div>
-		</div>
-		<br>
-		
-		<div class="row">
-				<div class="col-md-6">
-					<div class="resume-wrap ftco-animate">
-						<span class="date">2022-Present</span>
-						<h2>Development Engineer and Application Traner</h2>
-						<span class="position">Grok Learning Pvt Ltd</span>
-						<p class="mt-4">Grok Learning Pvt Ltd, is a EDTech Comapny which is Bridging the gap between Industries and Educational Institutes through our Applied Learning platform.
-
- 
-							<ul>
-								<li>Developed IoT applications using Raspberry pi and implemented Python programming for them.</li>
-								<li>Created IoT applications using Raspberry pi and conducted Python development through it.</li>
-								<li>Used applications to build projects and operated them by creating web pages using HTML and CSS.</li>
-								<li>Delivered multiple training and mentorship sessions on IoT in Depth like how it works, where AWS comes in place, about the sensors.</li>
-							</ul>
-						</p>
-					</div>
-
-				</div>
-
-				<div class="col-md-6">
-					<div class="resume-wrap ftco-animate">
-						<span class="date">Part Time Self Learning</span>
-						<h2>Data Analyst</h2>
-						<span class="position">Self Learning</span>
-						<p class="mt-4">Self learning has helped my realize the importance of data and how to configure and represent it in a more meaningful and detailed manner.
-							<ul>
-								<li>Performed in-depth market research and analysis to create dashboard on Power Bi.</li>
-								<li>Performed Sales Analysis using python by taking the raw data from the internet..</li>
-								<li>Improving in SQL has allowed me to understand how to utilize the cleansing process and how to make data more efficient and accurate.</li>
-							</ul>
-						</p>
-					</div>
-
-				</div>
-			</div>
-
-		<br>
-		<br>
-
-		<div class="row">
-			<h1 class="big-4">Education</h1>
-			<div class="underline"></div>
-		</div>
-		<br>
-		
-			<div class="row">
-    			<div class="col-md-6">
-    				<div class="resume-wrap ftco-animate">
-    					<span class="date">2019-2022</span>
-    					<h2>Graduation in Computer Science</h2>
-    					<span class="position">Guru Nanak Khalsa College of ARTS, COMMERCE &amp; SCIENCE</span>
-    					<p class="mt-4">Grade: First class distinction.</p>
-    				</div>
-    			</div>
-
-    			<div class="col-md-6">
-    				<div class="resume-wrap ftco-animate">
-    					<span class="date">2017-2019</span>
-    					<h2>Higher Secondary School</h2>
-    					<span class="position">Guru Nanak Khalsa College of ARTS, COMMERCE &amp; SCIENCE</span>
-    					<p class="mt-4">Grade: First class distinction.</p>
-    				</div>
-				</div>
-    		</div>
-
-    		<div class="row justify-content-center mt-5">
-    			<div class="col-md-6 text-center ftco-animate">
-    				<p><a href="#" class="btn btn-primary py-4 px-5">Download CV</a></p>
-    			</div>
-    		</div>
-    	</div>
-    </section>
-
-   
-
-    <section class="ftco-section" id="project-section">
-      <div class="container">
-        <div class="row justify-content-center mb-5 pb-5">
-          <div class="col-md-7 heading-section text-center ftco-animate">
-            <h1 class="big big-2">Projects</h1>
-            <h2 class="mb-4">Projects</h2>
-            <p>Below are the sample Data Analytics projects on Python & Power BI .</p>
-          </div>
+        <div id="page2">
+            <h2>CERTIFY YOUR BUILDING AS A DIGITAL TWIN TOKEN (DTT)</h2>
+            <h1>The Digital Twin Token is a unique digital asset backed by property data. Magma combines your building's
+                components and systems essential information into a DTT.</h1>
         </div>
-		<br>
-			<div class="row d-flex">
-          <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry justify-content-end">
-              <a href="https://github.com/hrushikeshh/Amazon-Sales-Analysis/blob/main/Amazon%20Sales%20Analysis.ipynb" class="block-20 zoom-effect" style="background-image: url('images/proj_1.avif');">
-              </a>
-              <div class="text mt-3 float-right d-block">
+        <div id="page3">
+            <canvas></canvas>
+         </div>
+         <div id="page4">
+            <h3>CONNECT THE BUILDING'S TWIN TO YOUR STAKEHOLDER</h3>
+            <h1>Users connect directly to the DTT without any intermediaries. As Stakeholder, they have the power to upload and verify information that enriches the Digital Twin Token. A Stakeholder ability to access validated-data to perform task depends on their specific role.</h1>
+         </div>
+         <div id="page5">
+            <canvas></canvas>
+         </div>
+         <div id="page6">
+            <h3>INCREASE YOUR DIGITAL TWIN TOKEN'S VALUE</h3>
+            <h1>DTT data increases the value of your digital asset by lowering operational costs, improving energy use, assisting commercialization, and boosting the liquidity of your building.</h1>
+         </div>
+         <div id="page7">
+            <div class="page7-cir">
+                <div class="page7-cir-inner"></div>
+            </div>
+            <canvas></canvas>
+         </div>
+         <div id="page8">
+            <div class="page8-bottom">
+                <h1>Maagma DTT</h1>
+                <button>LEARN MORE</button>
+            </div>
+            <video src="https://thisismagma.com/wp-content/themes/magma/assets/home/glass/1.webm?2" autoplay loop muted></video>
+         </div>
+         <div id="page9">
+            <div class="left9">
+                <h1>What is <br> Magma?</h1>
+            </div>
+            <div class="right9">
+                <div class="right9-center"></div>
+            </div>
+         </div>
+         <div id="page10">
+            <div class="right10">
+                <div class="right10-inner">
+                    <h1>Web3 platform</h1>
+                    <p>Magma is a Web3 platform for all real estate stakeholders, which provides users with the ability to manage interactions between physical and digital assets through unique, and collectively generated, 3D representations of their buildings.</p>
+                </div>
+                <div class="right10-inner">
+                    <h1>The Digital Twin Token: The building’s unique digital copy</h1>
+                    <p>Magma uses blockchain technology to record essential data, which enables transparent, traceable, and immutable streams of information to be readily accessible to its users. Magma smart contracts are built with this blockchain data to expedite tasks like requests for proposals, lease agreements, and services arrangements.</p>
+                </div>
+                <div class="right10-inner">
+                    <h1>An Index of digitization</h1>
+                    <p>The Magma Index provides valuable insight for decision-making regarding data-sharing, service-creating, and operational/environmental expectations.</p>
+                </div>
+            </div>
+         </div>
+         <div id="page11">
+            <h1>Recent Blog</h1>
+            <div class="page11-inner">
+                <div class="left11">
+                    <img src="https://thisismagma.com/wp-content/uploads/2023/05/thisismagma.com-magma-a-la-3eme-edition-du-tech-talk-de-cbre-france-1684942208038.jpeg" alt="">
+                </div>
+                <div class="right11">
+                    <h4>JUNE 21,2024</h4>
+                    <h1>Magma At CBRE France's 3rd Tech Talk</h1>
+                </div>
+            </div>
+            <div class="page11-inner">
+                <div class="left11">
+                    <img src="https://thisismagma.com/wp-content/uploads/2023/05/thisismagma.com-workshop-blockchain-et-actif-digitaux-sba-16-min-scaled.jpg" alt="">
+                </div>
+                <div class="right11">
+                    <h4>MAY 30,2024</h4>
+                    <h1>Blockchain and Digital Assets Workshop - Magma SBA</h1>
 
-                <h3 class="heading"><a href="https://github.com/hrushikeshh/Amazon-Sales-Analysis/blob/main/Amazon%20Sales%20Analysis.ipynb">Amazon Sales Analysis using Python</a></h3>
-                <p>Analyzed amazon sales using python and checked exploratory data analysis.</p>
-              </div>
+                </div>
             </div>
-          </div>
-          <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry justify-content-end">
-              <a href="https://github.com/hrushikeshh/Diwali-sales-analysis/blob/main/Diwali%20Sales%20analysis.ipynb" class="block-20 zoom-effect" style="background-image: url('images/proj_2.jpg');">
-              </a>
-              <div class="text mt-3 float-right d-block">
+            <div class="page11-inner">
+                <div class="left11">
+                    <img src="https://thisismagma.com/wp-content/uploads/2023/03/magma.wp2.cubdev.com-exploring-the-potential-of-real-estate-tokenization-digital-twins-magma.png" alt="">
+                </div>
+                <div class="right11">
+                    <h4>STORIES / MAR 31,2024</h4>
+                    <h1>Magma and SuperWorld create breakthrough patnership to link physical real estate assests and their digital twins in real world locations anywhere on Earth.</h1>
 
-                <h3 class="heading"><a href="https://github.com/hrushikeshh/Diwali-sales-analysis/blob/main/Diwali%20Sales%20analysis.ipynb">Data Analysis using Python Project</a></h3>
-                <p>Performed exploratory data analysis on diwali sales data using Python to improve the customer experience.</p>
-			  </div>
+                </div>
             </div>
-          </div>
-			<div class="col-md-4 d-flex ftco-animate">
-				<div class="blog-entry justify-content-end">
-				<a href="https://github.com/hrushikeshh/Superstore-Sales-Analysis-and-Forcasting/blob/main/SuperStore%20Sales%20Analysis%20n%20forecasting.pbix" class="block-20 zoom-effect" style="background-image: url('images/proj_4.jpg');">
-				</a>
-				<div class="text mt-3 float-right d-block">
-  
-				  <h3 class="heading"><a href="https://github.com/hrushikeshh/Superstore-Sales-Analysis-and-Forcasting/blob/main/SuperStore%20Sales%20Analysis%20n%20forecasting.pbix">Sales Forecast- Time Series Forecasting</a></h3>
-				  <p>Used multiple charts to forecast sales (retail store) and performed time series analysis.</p>
-				</div>
-			  </div>
-			</div>
-			</div>
-			  </div>
-			</div>
-		 </div>
-	  </div>
-              </div>
+         </div>
+         <div id="page12">
+            <div class="page12-inner">
+                <h1>Featured In</h1>
+                <p>Thrilled to have been featured in several prominent media <br> outlets and leading professionals across the world’s best <br> real estate and web3 institutions.</p>
             </div>
-          </div>
+         </div>
+         <div id="page13">
+            <h1>Become an
+                <br>
+                early adopter</h1>
+                <button>BOOK A DEMO</button>
+         </div>
+         <div id="page14">
+            <div class="page14-inner">
+                <h1>Twitter</h1>
+                <i class="ri-arrow-right-up-line"></i>
+                <div class="center14"></div>
+            </div>
+            <div class="page14-inner">
+                <h1>LinkedIn</h1>
+                <i class="ri-arrow-right-up-line"></i>
+                <div class="center14"></div>
+            </div>
+            <div class="page14-inner">
+                <h1>Instagram</h1>
+                <i class="ri-arrow-right-up-line"></i>
+                <div class="center14"></div>
+            </div>
+         </div>
         </div>
-	</div>
-  
+        <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+            integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+            integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="script.js"></script>
+</body>
 
-    </section>
-
-	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
-      <div class="container">
-		<div class="row d-md-flex align-items-center">
-          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-            <div class="block-18">
-              <div class="text">
-                <strong class="number" data-number="2">0</strong>
-                <span>Achievements</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-            <div class="block-18">
-              <div class="text">
-                <strong class="number" data-number="3">0</strong>
-                <span>Projects</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-            <div class="block-18">
-              <div class="text">
-                <strong class="number" data-number="50">0</strong>
-                <span>Mentored Students</span>
-              </div>
-            </div>
-          </div>
-          </div>
-      </div>
-	
-	  <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
-			<!-- <div class="container"> -->
-				<div class="row justify-content-center">
-					<div class="col-md-7 ftco-animate text-center">
-						<h2>More projects on<span> Github  </span> </h2>
-						<div class="heading"> <h4> I love to solve problems &amp; uncover hidden data stories </h4>
-						<br>
-						<p><a href="https://github.com/hrushikeshh" class="btn btn-primary py-3 px-5">GitHub</a></p>
-						</div>
-					</div>
-				</div>
-			<!-- </div> -->
-		</div>
-	</section>
-
-
-
-    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
-      <div class="container">
-      	<div class="row justify-content-center mb-5 pb-3">
-          <div class="col-md-7 heading-section text-center ftco-animate">
-            <h1 class="big big-2">Contact</h1>
-            <h2 class="mb-4">Contact Me</h2>
-            <p>Below are the details to reach out to me!</p>
-          </div>
-        </div>
-
-        <div class="row d-flex contact-info mb-5">
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-          	<div class="align-self-stretch box p-4 text-center">
-          		<div class="icon d-flex align-items-center justify-content-center">
-          			<span class="icon-map-signs"></span>
-          		</div>
-          		<h3 class="mb-4">Address</h3>
-	            <p>Mumbai, India</p>
-	          </div>
-          </div>
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-          	<div class="align-self-stretch box p-4 text-center">
-          		<div class="icon d-flex align-items-center justify-content-center">
-          			<span class="icon-phone2"></span>
-          		</div>
-          		<h3 class="mb-4">Contact Number</h3>
-	            <p><a href="tel://8591160964">+ 0 101 0101 101</a></p>
-	          </div>
-          </div>
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-          	<div class="align-self-stretch box p-4 text-center">
-          		<div class="icon d-flex align-items-center justify-content-center">
-          			<span class="icon-paper-plane"></span>
-          		</div>
-          		<h3 class="mb-4">Email Address</h3>
-	            <p><a href="mailto:hrushikeshgalande3@gmail.com">conctact@domainname.com</a></p>
-	          </div>
-          </div>
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-          	<div class="align-self-stretch box p-4 text-center">
-          		<div class="icon d-flex align-items-center justify-content-center">
-          			<span class="icon-globe"></span>
-          		</div>
-          		<h3 class="mb-4">Download Resume</h3>
-	            <p><a href="#">resumelink</a></p>
-	          </div>
-          </div>
-
-		  <div class="container">
-			<br>
-			<br>
-			<div class="row justify-content-center">
-				<div class="col-md-7 ftco-animate text-center">
-					<h2>Have a<span> Question?  </span> <a href="https://forms.gle/uLaTShUKXraAvHJ77" class="btn btn-primary py-3 px-5">Click Here</a> </h2>
-				</div>
-			</div>
-				<br>
-					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
-					  <li class="ftco-animate normal-txt">Find me on  </li>
-					  <li class="ftco-animate"><a href="https://www.linkedin.com/in/hrushikesh-galande-a1b913217/"><span class="icon-linkedin"></span></a></li>  
-					  <li class="ftco-animate"><a href="https://www.facebook.com/hrushikesh.vijaygalande"><span class="icon-facebook"></span></a></li>
-				      <li class="ftco-animate"><a href="https://www.instagram.com/hrushikeshh__/"><span class="icon-instagram"></span></a></li>
-					</ul>
-				<br>
-		   </div>
-   </div>
- </section>
-
-
- 
-	
-    <footer class="ftco-footer ftco-section">
-		<div class="container">
-		  <div class="row">
-			<div class="col-md-12 text-center">
-  
-			  <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-	Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-			</div>
-		  </div>
-		</div>
-	  </footer>
-
-
-  <!-- loader -->
-  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
-
-
-  <script src="js/jquery.min.js"></script>
-  <script src="js/jquery-migrate-3.0.1.min.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/jquery.easing.1.3.js"></script>
-  <script src="js/jquery.waypoints.min.js"></script>
-  <script src="js/jquery.stellar.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/jquery.magnific-popup.min.js"></script>
-  <script src="js/aos.js"></script>
-  <script src="js/jquery.animateNumber.min.js"></script>
-  <script src="js/scrollax.min.js"></script>
-  
-  <script src="js/main.js"></script>
-    
-  </body>
 </html>
